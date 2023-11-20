@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">git
+    <title>Par ou Impa?</title>
+</head>
+
+<body>
+
+    <div>
+
+        <h1>Verificar Par ou Ímpar</h1>
+
+        <label for="numeroInput"></label>
+        <input type="number" id="numeroInput" placeholder="Digite o numero">
+
+        <button onclick="verificarParOuImpar()">Verificar</button>
+
+        <p id="resultado"></p>
+    </div>
+
+
+</body>
+
+<script>
+    function verificarParOuImpar() {
+        // Obtém o valor do campo de entrada
+        var numero = document.getElementById("numeroInput").value;
+
+        // Verifica se o número é par ou ímpar
+        if (numero % 2 === 0) {
+            document.getElementById("resultado").innerHTML = "O número é par.";
+        } else {
+            document.getElementById("resultado").innerHTML = "O número é ímpar.";
+        }
+    }
+</script>
+
+</html>
